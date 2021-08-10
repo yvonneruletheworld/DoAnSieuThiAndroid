@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityDetails"
+    android:id="@+id/main_layout"
+    android:background="@drawable/gradient_background">
+
+
+    <ImageView
+        android:id="@+id/btn_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_favorite_border_24" />
+ <ImageView
+        android:id="@+id/btn_like1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_favorite_24" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="370dp"
+        android:background="@drawable/detail_page_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_addtocart"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="20dp">
+
+                <TextView
+                    android:id="@+id/txt_ratting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Người mua sắm nói gì về sản phẩm này"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/grey_bg"
+                    app:layout_constraintBottom_toTopOf="@+id/rattingBar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RatingBar
+                    android:id="@+id/rattingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:stepSize="0.5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_ratting">
+
+                </RatingBar>
+
+                <TextView
+                    android:id="@+id/txt_tag1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:background="@drawable/ic_cat_bg"
+                    android:fontFamily="@font/robotomedium"
+                    android:gravity="center"
+                    android:text="Body"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rattingBar" />
+
+                <TextView
+                    android:id="@+id/txt_tag2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/ic_cat_bg"
+                    android:fontFamily="@font/robotomedium"
+                    android:gravity="center"
+                    android:text="Lotion"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_tag1"
+                    app:layout_constraintStart_toEndOf="@+id/txt_tag1"
+                    app:layout_constraintTop_toTopOf="@+id/txt_tag1" />
+
+                <TextView
+                    android:id="@+id/txt_tenhang"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:fontFamily="@font/robotomedium"
+                    android:text="Japanese Cherry Blossom"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/txt_gia"
+                    app:layout_constraintStart_toStartOf="@+id/txt_tag1"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_tag1" />
+
+                <TextView
+                    android:id="@+id/txt_gia"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/robotomedium"
+                    android:text="$ 15.00"
+                    android:textColor="#42995C"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_tenhang"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/txt_tenhang" />
+
+                <TextView
+                    android:id="@+id/txt_giachuagiam"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:alpha="0.5"
+                    android:fontFamily="@font/robotomedium"
+                    android:text="$ 15.00"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_gia"></TextView>
+
+                <TextView
+                    android:id="@+id/txt_congdung"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/robotolight"
+                    android:lineSpacingExtra="2dp"
+                    android:text="A moisturizing body with a sweet and refreshing aroma of Japanese cherry blossom, peony, musk, and strawberry. Will make the skin feel moist and smooth. The combination also makes long-lasting fragrance."
+                    android:textColor="@android:color/background_dark"
+                    app:layout_constraintEnd_toEndOf="@+id/txt_gia"
+                    app:layout_constraintStart_toStartOf="@+id/txt_tenhang"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_tenhang" />
+
+
+                <TextView
+                    android:id="@+id/txt_tonkho"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:fontFamily="@font/robotolight"
+                    android:lineSpacingExtra="2dp"
+                    android:text="Còn lại:"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/background_dark"
+                    app:layout_constraintEnd_toEndOf="@+id/txt_gia"
+                    app:layout_constraintStart_toStartOf="@+id/txt_congdung"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_congdung" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/btn_minius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/scrollView"
+            app:layout_constraintTop_toTopOf="@+id/btn_addtocart"
+            app:srcCompat="@drawable/ic_minus" />
+
+        <TextView
+            android:id="@+id/txt_sl"
+            android:layout_width="50dp"
+            android:layout_height="53dp"
+            android:fontFamily="@font/robotomedium"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_minius"
+            app:layout_constraintStart_toEndOf="@+id/btn_minius"
+            app:layout_constraintTop_toTopOf="@+id/btn_minius"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/btn_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_sl"
+            app:layout_constraintStart_toEndOf="@+id/txt_sl"
+            app:layout_constraintTop_toTopOf="@+id/txt_sl"
+            app:srcCompat="@drawable/ic_plus" />
+
+        <Button
+            android:id="@+id/btn_addtocart"
+            android:layout_width="190dp"
+            android:layout_height="80dp"
+            android:background="@drawable/detail_page_cart_button_bg"
+            android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+            android:fontFamily="@font/robotomedium"
+            android:padding="16dp"
+            android:paddingRight="16dp"
+            android:text="Thêm vào giỏ"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/dt_product_img"
+        android:layout_width="256dp"
+        android:layout_height="370dp"
+        android:layout_marginTop="26dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:transitionName="image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/prod" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

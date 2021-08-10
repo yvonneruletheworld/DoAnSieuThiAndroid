@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="8dp"
+        android:id="@+id/cartView"
+        android:background="@color/yellow_bg_1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:background="@color/white"
+            >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:id="@+id/c_img"></ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/c_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:fontFamily="@font/robotomedium"
+                    android:text="Hiển thị tên sản phẩm"
+                    android:textSize="13dp"
+                    android:alpha="0.5"
+                    android:textColor="@color/black_bg"></TextView>
+
+                <TextView
+                    android:id="@+id/c_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotomediumitalic"
+                    android:textColor="@color/black_bg"
+                    android:text=""
+                    android:textSize="13dp">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/c_quality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotomediumitalic"
+                    android:textColor="@color/black_bg"
+                    android:text="x 1"
+                    android:textStyle="bold"
+                    android:textSize="15dp">
+
+                </TextView>
+            </LinearLayout>
+            </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

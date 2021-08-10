@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu_nav_home"
+        android:title="Home"
+        android:icon="@drawable/vector"
+        app:cnb_textColor="#000"
+        app:cnb_iconColor="#000"
+        app:cnb_backgroundColor="#fff">
+
+    </item><item android:id="@+id/menu_nav_shopping"
+        android:title="Shop"
+        android:icon="@drawable/icons8_shopping_bag_32"
+    app:cnb_textColor="#000"
+    app:cnb_iconColor="#000"
+    app:cnb_backgroundColor="#fff">
+
+</item><item android:id="@+id/menu_nav_cart"
+        android:title="Cart"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+    app:cnb_textColor="#000"
+    app:cnb_iconColor="#000"
+    app:cnb_backgroundColor="#fff"></item><item android:id="@+id/menu_nav_qr"
+        android:title="Scan"
+        android:icon="@drawable/icons8_qr_code_32"
+    app:cnb_textColor="#000"
+    app:cnb_iconColor="#000"
+    app:cnb_backgroundColor="#fff"></item>
+
+     </menu>

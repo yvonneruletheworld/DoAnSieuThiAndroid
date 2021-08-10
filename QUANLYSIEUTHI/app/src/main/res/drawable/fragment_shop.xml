@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:height="850dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#eeeefb"></solid>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/change_background_btn" android:height="220dp">
+        <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="50dp"
+                android:bottomRightRadius="50dp"></corners>
+        </shape>
+    </item>
+</layer-list>

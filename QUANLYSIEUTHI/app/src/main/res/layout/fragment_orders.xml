@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentOrders"
+    android:background="#F5F5F8">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_order"
+        >
+        // icon back
+        <View
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="36dp"
+            android:id="@+id/od_back_icon"
+            android:background="@drawable/ic_baseline_arrow_back_ios_24"
+            />
+
+        <!-- My profile -->
+        <TextView
+            android:id="@+id/my_profile"
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="73dp"
+            android:text="Đặt hàng"
+            android:textAppearance="@style/my_profile"
+            android:gravity="top"
+            android:fontFamily="@font/alata_regular"
+            />
+
+        <FrameLayout
+            android:id="@+id/frame_main_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/my_profile"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp">
+
+        </FrameLayout>
+    </RelativeLayout>
+
+</ScrollView>

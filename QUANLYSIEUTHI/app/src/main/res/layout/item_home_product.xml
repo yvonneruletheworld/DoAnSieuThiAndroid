@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="25dp"
+    android:layout_marginBottom="20dp">
+
+        <View android:id="@+id/rectangle_9"
+            android:background="@drawable/rectangle_9_shape"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="28dp"
+            android:layout_width="170dp"
+            android:layout_height="220dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="12dp"
+        app:cardCornerRadius="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="12dp">
+        <ImageView android:id="@+id/product_img"
+                    android:src="@drawable/mask_group"
+                    android:contentDescription="mask_group"
+                    android:layout_marginLeft="0dp"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp" />
+    </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:fontFamily="@font/robotomedium"
+                android:id="@+id/product_title"
+                android:layout_width="wrap_content"
+                android:textSize="13dp"
+                android:layout_below="@+id/cview"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/yvonne_mall"
+                android:textAppearance="@style/yvonne_mall"
+                android:gravity="center_horizontal|top"
+                />
+
+    <TextView
+        android:id="@+id/product_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/product_title"
+        android:fontFamily="@font/robotoblack"
+        android:gravity="center"
+        android:text="@string/n1_900_string"
+        android:textColor="@color/n1_900_color"
+        android:textSize="17sp" />
+    <TextView
+        android:id="@+id/product_pride"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/robotolight"
+        android:gravity="center"
+        android:layout_below="@+id/product_cost"
+        android:text="@string/n1_900_string"
+        android:textColor="@color/grey_med"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/btn_addtocart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/robotomedium"
+        android:textColor="@color/white"
+        android:background="@drawable/banner_background"
+        android:text="Thêm vào giỏ hàng"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/product_pride"
+        android:padding="12dp"></TextView>
+    <LinearLayout
+        android:id="@+id/quality_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/product_pride">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMinius"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_baseline_indeterminate_check_box_24"></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:gravity="bottom"
+            android:text="1"
+            android:textSize="18sp"
+            android:textColor="@color/yellow_bg_1"
+            android:textStyle="bold"
+            android:id="@+id/product_quality"></TextView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMax"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_baseline_add_box_24"></ImageView>
+    </LinearLayout>
+
+</RelativeLayout>

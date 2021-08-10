@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/gh_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+      <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/cb_gh"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/robotomedium"
+                android:textColor="@color/yellow_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+          <TextView
+              android:id="@+id/gh_name"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="left"
+              android:fontFamily="@font/robotomedium"
+              android:text="Hiển thị tên sản phẩm"
+              android:textSize="15dp"
+              android:alpha="0.5"
+              android:layout_marginLeft="40dp"
+              android:textColor="@color/black_bg"></TextView>
+          <TextView
+              android:id="@+id/gh_cost"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="left"
+              android:fontFamily="@font/robotomedium"
+              android:text="Hiển thị tên sản phẩm"
+              android:textSize="16dp"
+              android:layout_marginLeft="40dp"
+              android:textColor="@color/black_bg"></TextView>
+
+      </LinearLayout>
+</RelativeLayout>

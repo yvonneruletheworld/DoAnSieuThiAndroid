@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityLogIn">
+
+    <!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="531dp"-->
+<!--        android:layout_below="@id/image_lg"-->
+<!--        android:gravity="left"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="20dp">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:fontFamily="@font/mitr_bold"-->
+<!--            android:text="@string/login_content"-->
+<!--            android:textColor="@color/yellow_bg"-->
+<!--            android:textSize="40dp"-->
+<!--            android:textStyle="bold"></TextView>-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/newMember_email_txt"-->
+<!--            android:layout_width="350dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/radius_border_textbox"-->
+<!--            android:fontFamily="@font/alata_regular"-->
+<!--            android:hint="Your Email"-->
+<!--            android:padding="20dp"-->
+<!--            android:textColor="@color/black_bg"-->
+<!--            android:textStyle="bold"></EditText>-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/newMember_pass_txt"-->
+<!--            android:layout_width="350dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/radius_border_textbox"-->
+<!--            android:fontFamily="@font/alata_regular"-->
+<!--            android:hint="Password"-->
+<!--            android:padding="20dp"-->
+<!--            android:textColor="@color/black_bg"-->
+<!--            android:textStyle="bold"></EditText>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:fontFamily="@font/alata_regular"-->
+<!--            android:hint="Your Email"-->
+<!--            android:textColor="@color/black_bg"-->
+<!--            android:textStyle="bold">-->
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkBox"-->
+<!--                style="@android:style/Widget.DeviceDefault.Light.CompoundButton.CheckBox"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="Save"-->
+<!--                app:buttonTint="@color/yellow_bg" />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/newMember_btn"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:padding="15dp"-->
+<!--            android:background="@drawable/radius_border_btn"-->
+<!--            android:fontFamily="sans-serif-light"-->
+<!--            android:textStyle="bold"-->
+<!--            android:text="ĐĂNG NHẬP"-->
+<!--            android:textSize="20dp"-->
+<!--            android:textColor="@color/yellow_bg"-->
+<!--            app:backgroundTint="@null"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/forget_pass_txt"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Quên Mật Khẩu"-->
+<!--            android:gravity="center"-->
+<!--            android:fontFamily="@font/alata_regular"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            />-->
+<!--        <TextView-->
+<!--            android:id="@+id/language"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Ngôn ngữ"-->
+<!--            android:gravity="center"-->
+<!--            android:fontFamily="@font/alata_regular"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            />-->
+
+
+<!--    </LinearLayout>-->
+
+    <FrameLayout
+        android:id="@+id/frame_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"></FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/iphone_11_p"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+
+        <TextView
+            android:id="@+id/rc_itemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="left"
+            android:fontFamily="@font/robotomedium"
+            android:text="Đã tiếp nhận"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black_bg"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/rc_pttt"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="left"
+            android:layout_below="@+id/rc_itemTitle"
+            android:fontFamily="@font/robotomedium"
+            android:text="Thanh toán bằng hình thức: Thanh toán khi nhận hàng"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="11dp"
+            android:alpha="0.5"></TextView>
+        <TextView
+            android:id="@+id/rc_tgnh"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="left"
+            android:layout_below="@+id/rc_pttt"
+            android:fontFamily="@font/robotomedium"
+            android:text="Thời gian nhận hàng: Sau 2 tiếng"
+            android:textColor="@color/black"
+            android:textSize="11dp"
+            android:alpha="0.5"></TextView>
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/login_bg1"
+            android:id="@+id/rc_img"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius_border_layout"
+            android:padding="15dp"
+            android:id="@+id/rc_cusLayout"
+            android:layout_below="@+id/rc_img">
+
+            <TextView
+                android:id="@+id/rc_CusName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/rc_cusLogo"
+                android:fontFamily="@font/robotomedium"
+                android:text="Tên khách hàng"
+                android:textColor="@color/black_bg"
+                android:textSize="15dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/rc_CusPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/rc_cusLogo"
+                android:layout_below="@+id/rc_CusName"
+                android:alpha="0.5"
+                android:fontFamily="@font/robotomedium"
+                android:text="0965198814"
+                android:textColor="@color/black"
+                android:textSize="14dp"></TextView>
+
+            <TextView
+                android:id="@+id/rc_CusAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rc_CusPhone"
+                android:layout_toEndOf="@+id/rc_cusLogo"
+                android:alpha="0.5"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/robotomedium"
+                android:text="925 Trần Hưng Đạo Thành Phố Quy Nhơn, Bình Định"
+                android:textColor="@color/black"
+                android:textSize="14dp"></TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/video_call"
+                android:id="@+id/rc_cusLogo"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/rc_ctdh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="left"
+            android:layout_below="@+id/rc_cusLayout"
+            android:fontFamily="@font/robotomedium"
+            android:text="Chi Tiết Đơn Hàng"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black_bg"
+            android:textSize="17dp"></TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_recyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rc_ctdh"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="10dp"></androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/rc_madonhang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="left"
+            android:layout_below="@+id/rc_recyclerView"
+            android:fontFamily="@font/robotomedium"
+            android:text="Đơn hàng số"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black_bg"
+            android:textSize="17dp"></TextView>
+        <TextView
+            android:id="@+id/rc_thoigian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="left"
+            android:layout_below="@+id/rc_madonhang"
+            android:fontFamily="@font/robotolight"
+            android:text="Thanh toán bằng hình thức: Thanh toán khi nhận hàng"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:alpha="0.5"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rc_thoigian"
+            android:fontFamily="@font/robotomedium"
+            android:text="Tổng tiền hàng (Tạm tính)"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rc_thoigian"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/robotomedium"
+            android:text="000"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:id="@+id/txt_tongtienhangtt"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_tongtienhangtt"
+            android:fontFamily="@font/robotomedium"
+            android:text="Phí giao hàng"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_tongtienhangtt"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/robotolight"
+            android:text="MIỄN PHÍ"
+            android:textSize="15sp"
+            android:id="@+id/txt_phigiaohang"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_phigiaohang"
+            android:fontFamily="@font/robotomedium"
+            android:text="Giảm giá"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_phigiaohang"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/robotolight"
+            android:text="000"
+            android:textSize="15sp"
+            android:id="@+id/txt_giamgia"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/txt_tc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_giamgia"
+            android:fontFamily="@font/robotoblack"
+            android:text="Tổng cộng"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/txt_tongcong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_giamgia"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/txt_tc"
+            android:fontFamily="@font/robotoblack"
+            android:text="000 đ"
+            android:textColor="@color/peach_bg_1"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_huy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/robotomedium"
+            android:text="Hủy"
+            android:textSize="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/txt_giamgia"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</ScrollView>

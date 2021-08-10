@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bottomSheetContainer"
+    android:background="@drawable/detail_page_bg">
+
+    <ImageView
+        android:id="@+id/sheet_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="73dp"
+        android:layout_toEndOf="@+id/sheet_title"
+        android:src="@drawable/ic_baseline_close_24" />
+    <TextView
+        android:id="@+id/sheet_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/robotomedium"
+        android:paddingVertical="15dp"
+        android:text="Mã khuyến mãi"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sheet_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:id="@+id/sheet_rv">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

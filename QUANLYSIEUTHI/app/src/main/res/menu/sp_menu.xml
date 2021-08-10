@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_nav_search"
+        android:title="Tìm kiếm"
+        android:icon="@drawable/icons8_search1_48">
+    </item>
+
+    <item android:id="@+id/menu_nav_cate"
+        android:title="Danh mục"
+        android:icon="@drawable/icons8_categorize_48">
+    </item>
+    <item android:id="@+id/menu_nav_fav"
+        android:title="Yêu thích"
+        android:icon="@drawable/icons8_heart_48">
+    </item>
+    <item android:id="@+id/menu_nav_order"
+        android:title="Đơn đặt"
+        android:icon="@drawable/ic_baseline_bookmark_border_24">
+    </item>
+</menu>

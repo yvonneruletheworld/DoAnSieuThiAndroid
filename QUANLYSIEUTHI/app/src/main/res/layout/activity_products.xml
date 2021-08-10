@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fragment_shop"
+    tools:context=".ActivityProducts">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.example.quanlysieuthi.GradientTextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Ten loai hang"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:padding="15dp"
+                android:background="@drawable/edittext_curve_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swpieRefresh"
+                android:layout_below="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="650dp"
+                app:layout_constraintVertical_bias="0.0"
+                android:paddingTop="30dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/recyclerView_prdtype"
+                android:layout_gravity="top|center_horizontal"
+                android:horizontalSpacing="16dp"
+                android:padding="5dp"
+                android:verticalSpacing="46dp">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+    <com.nex3z.notificationbadge.NotificationBadge
+        android:id="@+id/cart_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btn_cart"
+        android:text="0"
+        android:textSize="15dp"
+        android:textColor="@color/peach_bg_1"
+        android:layout_marginBottom="60dp"></com.nex3z.notificationbadge.NotificationBadge>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/peach_bg_1"
+        android:src="@drawable/ic_cart"
+        android:tint="@color/peach_bg_1"
+        android:id="@+id/btn_cart"
+        app:layout_anchorGravity="bottom|right|end"
+        app:rippleColor="@color/yellow_bg">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+</RelativeLayout>

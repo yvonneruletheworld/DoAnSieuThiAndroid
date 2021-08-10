@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="600dp">
+    <TextView
+        android:id="@+id/ohh_snap_no"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Oh! Bạn chưa đặt hàng"
+        android:fontFamily="@font/alata_regular"
+        android:textColor="@color/black_bg"
+        android:textSize="30dp"
+        android:gravity="center_horizontal|top"
+        />
+    <TextView
+        android:id="@+id/ohh_snap_no1"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ohh_snap_no"
+        android:layout_centerHorizontal="true"
+        android:text="Bạn vẫn chưa có sản phẩm đặt trước nào vui lòng kiểm tra lại thông tin đặt hàng"
+        android:textSize="17dp"
+        android:fontFamily="@font/alata_regular"
+        android:gravity="center_horizontal|top"
+        android:alpha="0.57"
+        />
+</RelativeLayout>

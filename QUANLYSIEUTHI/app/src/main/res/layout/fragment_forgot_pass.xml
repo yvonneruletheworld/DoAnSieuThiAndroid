@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentForgotPass">
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="531dp"
+android:gravity="left"
+android:orientation="vertical"
+android:padding="20dp">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/mitr_bold"
+    android:text="@string/repass_title"
+    android:textColor="@color/yellow_bg"
+    android:textSize="30dp"
+    android:textStyle="bold"></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alata_regular"
+        android:layout_marginTop="10dp"
+        android:text="@string/repass_content"
+        android:textSize="17dp"
+        />
+
+    <EditText
+        android:id="@+id/repass_sdt_txt"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius_border_textbox"
+        android:fontFamily="@font/alata_regular"
+        android:hint="Số điện thoại"
+        android:padding="20dp"
+        android:textColor="@color/black_bg"
+        android:textStyle="bold"></EditText>
+
+<EditText
+    android:id="@+id/repass_pass_txt"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/radius_border_textbox"
+    android:fontFamily="@font/alata_regular"
+    android:hint="Mật Khẩu mới"
+    android:padding="20dp"
+    android:textColor="@color/black_bg"
+    android:textStyle="bold"></EditText>
+
+<EditText
+    android:id="@+id/repass_repass_txt"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/radius_border_textbox"
+    android:fontFamily="@font/alata_regular"
+    android:hint="Nhập lại Mật Khẩu mới"
+    android:padding="20dp"
+    android:textColor="@color/black_bg"
+    android:textStyle="bold"></EditText>
+
+
+    <Button
+        android:id="@+id/repass_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/radius_border_btn"
+        android:backgroundTint="@null"
+        android:fontFamily="sans-serif-light"
+        android:padding="10dp"
+        android:text="XÁC NHẬN"
+        android:textColor="@color/yellow_bg"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:backgroundTint="@null" />
+
+<TextView
+    android:id="@+id/back_txt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:fontFamily="@font/alata_regular"
+    android:text="Trở về"
+    android:textSize="15dp"
+    />
+
+
+</LinearLayout>
+</RelativeLayout>

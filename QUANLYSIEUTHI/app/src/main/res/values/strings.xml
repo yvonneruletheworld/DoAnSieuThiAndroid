@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">QUANLYSIEUTHI</string>
+    <string name="customer_option_content">Chúng tôi đáp ứng đầy đủ mọi nhu cầu mua sắm. Từ các mặt hàng thực phẩm, tiêu dùng hằng ngày trong khu vực siêu thị, đến các quầy hàng thời trang cho cả người lớn và trẻ em, cũng như các vật dụng gia đình đáp ứng được sự thay đổi trong phong cách sống của khách hàng</string>
+    <string name="welcome_name">YVONNE</string>
+    <string name="welcome_detail">We have all you need</string>
+    <string name="repass_title">Thiết lập mật khẩu</string>
+    <string name="repass_content">Nhập số điện thoại đã đăng ký để thiết lập lại mật khẩu</string>
+    <string name="login_content">Trở thành member của Yvonne và nhận nhiều ưu đã hấp dẫn</string>
+    <string name="login_title">Đăng nhập</string>
+    <string name="register_title">Đăng ký</string>
+    <string name="register_info_long_content">Nhập đầy đủ thông tin để đảm bảo những quyền lợi thành viên</string>
+    <string name="register_content">Trở thành member của Yvonne và nhận nhiều ưu đã hấp dẫn</string>
+    <string name="register_pass_content">Nhập mật khẩu để đăng ký thành viên mới</string>
+    <string name="ek_img_content">ExportKit Image</string>
+    <string name="yvonne_mall_b_n_c_a_m_i_nh__string">Yvonne Mall - <b></b> Bạn của mọi nhà</string>
+    <string name="button_string">KHUYẾN MÃI</string>
+    <string name="button_ek1_string">QUÀ TẶNG</string>
+    <string name="button_ek2_string">VOCHER</string>
+    <string name="button_ek3_string">Mua sắm</string>
+    <string name="button_ek4_string">Ngày thành viên</string>
+    <string name="button_ek5_string">Sinh nhật</string>
+    <string name="button_ek6_string">SẢN PHẨM</string>
+    <string name="n1_900_string">N1,900</string>
+    <string name="yvonne_mall_b_n_c_a_m_i_nh__ek1_string">Yvonne Mall Bạn của mọi nhà</string>
+    <string name="n1_900_ek1_string">N1,900</string>
+    <string name="yvonne_mall_b_n_c_a_m_i_nh__ek2_string">Yvonne Mall Bạn của mọi nhà</string>
+    <string name="n1_900_ek2_string">N1,900</string>
+    <string name="yvonne_mall_b_n_c_a_m_i_nh__ek3_string">Yvonne Mall Bạn của mọi nhà</string>
+    <string name="button_ek7_string">Tuyn xe n mall</string>
+    <string name="search_string">Search</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="yvonne_mall">Hiển thị tên sản phẩm
+</string>
+    <string name="title_activity_category">ActivityCategory</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+
+
+</resources>

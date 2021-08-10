@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="25dp"
+    android:layout_marginLeft="10dp"
+    android:id="@+id/pm_layout">
+
+        <View android:id="@+id/rectangle_9"
+            android:background="@drawable/radius_border_layout"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="250dp"
+            android:layout_height="100dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="12dp"
+        app:cardCornerRadius="25dp">
+        <TextView
+            android:id="@+id/pm_des"
+            android:contentDescription="mask_group"
+            android:text="Content của payment"
+            android:textColor="@color/white"
+            android:fontFamily="@font/robotomedium"
+            android:background="@drawable/gradient_background"
+            android:layout_width="wrap_content"
+            android:padding="7dp"
+            android:textSize="12dp"
+            android:layout_height="wrap_content" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/pm_img"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/cview"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentStart="true"></ImageView>
+
+    <TextView
+        android:id="@+id/pm_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cview"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/pm_img"
+        android:fontFamily="@font/robotomedium"
+        android:gravity="center_horizontal|top"
+        android:text="@string/yvonne_mall"
+        android:textAppearance="@style/yvonne_mall"
+        android:textSize="13dp" />
+
+
+    <TextView
+        android:id="@+id/pm_lk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pm_img"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:text="Liên kết TK "
+        android:textColor="@color/grey_med"
+        android:textSize="15sp" />
+
+</RelativeLayout>

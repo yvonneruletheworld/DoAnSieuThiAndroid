@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:padding="5dp">
+    <View android:id="@+id/rectangle_9"
+        android:background="@color/light_grey"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="28dp"
+        android:layout_width="200dp"
+        android:layout_height="250dp"/>
+
+    <ImageView android:id="@+id/product_img"
+        android:src="@color/light_grey"
+        android:contentDescription="mask_group"
+        android:layout_marginLeft="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+    <TextView
+        android:fontFamily="@font/alata_regular"
+        android:id="@+id/product_title"
+        android:layout_width="150dp"
+        android:textSize="15dp"
+        android:layout_below="@+id/product_img"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/light_grey"
+        android:textAppearance="@style/yvonne_mall"
+        android:gravity="center_horizontal|top"
+        />
+
+    <TextView
+        android:id="@+id/product_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/robotoblack"
+        android:gravity="center"
+        android:background="@color/light_grey"
+        android:textColor="@color/n1_900_color"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
